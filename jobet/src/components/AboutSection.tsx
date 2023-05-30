@@ -1,19 +1,21 @@
 import React from "react"
 import Image from "next/image"
 import SlideUp from "./SlideUp"
-
+import { SiNextdotjs, SiCsharp, SiHtml5, SiCss3
+ , SiJavascript, SiPython, SiDotnet, SiReact, SiNodedotjs
+, SiGithub, SiJupyter } from 'react-icons/si'
 const skills = [
-  { skill: "C#" },
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "Python" },
-  { skill: "ASP.NET" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Node.js" },
-  { skill: "GitHub" },
-  { skill: "Jupyter" },
+  { icon: <SiCsharp  className="inline"/>, skill: "C#" },
+  { icon: <SiHtml5  className="inline"/>, skill: "HTML" },
+  { icon: <SiCss3  className="inline"/>, skill: "CSS" },
+  { icon: <SiJavascript  className="inline"/>, skill: "JavaScript" },
+  { icon: <SiPython  className="inline"/>, skill: "Python" },
+  { icon: <SiDotnet  className="inline"/>, skill: "ASP.NET" },
+  { icon: <SiReact  className="inline"/>, skill: "React" },
+  { icon: <SiNextdotjs className="inline"/>, skill: "Next.js" },
+  { icon: <SiNodedotjs  className="inline"/>, skill: "Node.js" },
+  { icon: <SiGithub  className="inline"/>, skill: "GitHub" },
+  { icon: <SiJupyter  className="inline"/>, skill: "Jupyter" },
 ]
 
 const AboutSection = () => {
@@ -58,12 +60,9 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
-                  <p
-                    key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
+                  <span className="bg-blue-600 text-white px-4 py-2 mr-2 mt-2 rounded-full font-semibold">
+                    {item.icon} {item.skill}
+                  </span>
                 )
               })}
             </div>

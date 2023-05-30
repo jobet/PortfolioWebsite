@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "DSA Visualizer",
-    description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a bacl-end webpage for webmasters to see analytics, comments, and users.",
+    description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a back-end webpage for webmasters to see analytics, comments, and users.",
     image: "/dsavisualizer.png",
     github: "https://github.com/Staniell/Data-Structures-Visualizer-React",
     link: "",
@@ -23,7 +23,7 @@ const projects = [
   {
     name: "Counterfeit Over-The-Counter Medicine Detector",
     description:
-      "A web application that allows user to detect medicine authenticity.",
+      "A web application that allows users to detect medicine authenticity through object detection.",
     image: "/familyphotos.png",
     github: "",
     link: "",
