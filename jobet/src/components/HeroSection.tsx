@@ -20,11 +20,10 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-6xl font-bold font-serif mt-6 md:mt-0">Hey, Jobet here!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            A {' '}
             <span className="font-semibold text-blue-600">
               Software and Full Stack Web Developer{' '}
             </span>
-            at your service.
+            at your service. Scroll down to see my skills and works!
           </p>
         </div>
       </div>

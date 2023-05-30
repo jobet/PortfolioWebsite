@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        backgroundColor: '#fafced',
+      },
       fontFamily: {
         sans: 'Mukta Mahee, sans-serif',
         serif: 'DM Serif Display, serif',

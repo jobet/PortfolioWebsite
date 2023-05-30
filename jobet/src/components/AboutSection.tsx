@@ -1,39 +1,40 @@
 import React from "react"
 import Image from "next/image"
+import SlideUp from "./SlideUp"
 
 const skills = [
+  { skill: "C#" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
-  { skill: "TypeScript" },
   { skill: "Python" },
+  { skill: "ASP.NET" },
   { skill: "React" },
   { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
+  { skill: "Node.js" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+  { skill: "Jupyter" },
 ]
 
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-left font-bold font-serif text-4xl">
+      <div className="pb-12 md:pt-16">
+        <h1 className="my-5 text-left font-bold font-serif text-4xl">
           Let Me Tell You About Myself
         </h1>
-        <div className="md:w-1/2 ">
+        <div className="flex flex-col space-y-28">
+        <SlideUp offset="-300px 0px -300px 0px">
+        <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+        <div className=" md:w-1/4">
         <Image
               src="/hero-image.png"
               alt=""
               width={325}
               height={325}
             />
-          </div>
-        <div className="flex flex-col space-y-10 items-stretch justify-center align-right md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          
-          <div className="text-center md:w-1/2 md:text-left">
-          <div className="md:w-1/2 ">
+        </div>
+        <div className="md:w-3/4 md:text-left text-xl">
             <p>
               Hello and welcome to my portfolio! My name is Jose Albero Aguirre, but you can call me Jobet. I am a Software and Full Stack Developer.
             </p><br/>  
@@ -47,8 +48,11 @@ const AboutSection = () => {
               Outside of web development, I enjoy playing video games, reading manga, watching videos and learning new things. 
               It&apos;s a pleasure to connect - check out some of my work and projects!
             </p>
+            </div>
           </div>
-          <h1 className="text-left font-bold font-serif text-4xl">
+          </SlideUp>
+        </div>
+        <h1 className="my-5 text-left font-bold font-serif text-4xl">
           My Skills
           </h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
@@ -63,9 +67,6 @@ const AboutSection = () => {
                 )
               })}
             </div>
-
-          </div>
-        </div>
       </div>
     </section>
   )

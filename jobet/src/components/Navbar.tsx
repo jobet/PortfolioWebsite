@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-scroll/modules'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
-
+import { MdMenu } from "react-icons/md";
 interface NavItem {
   label: string
   page: string
@@ -30,12 +30,13 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50">
+    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 outline outline-1 outline-blue-700 bg-backgroundColor">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2 cursor-pointer">
+                <img src="\logo.svg" width="30"></img>
                 <h2 className="text-2xl font-serif font-bold">Jose Alberto Aguirre</h2>
               </div>
             </Link>
@@ -44,7 +45,7 @@ export default function Navbar() {
                 className="p-2 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
-                test
+                <MdMenu />
               </button>
             </div>
           </div>
