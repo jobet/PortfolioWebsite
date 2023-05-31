@@ -17,16 +17,16 @@ function ContactForm() {
       );
   }
   return (
-    <section id="contact">
+    <section id="contact" className="py-12">
     <h1 className="my-2 text-left font-bold font-serif text-4xl">
       Get In Touch
     </h1>
       <SlideUp>
       <div className="flex flex-col z-10 md:flex-row">
-      <div className="md:w-2/3 mx-2">
+      <div className="md:w-2/3 md:mx-2">
       <form onSubmit={handleSubmit}>
       <input
-        className="bg-white rounded-xl p-2 md:w-full block mb-2"
+        className="bg-white rounded-xl p-2 w-full block mb-2"
         placeholder="youremail@website.com"
         id="email"
         type="email" 
@@ -38,7 +38,7 @@ function ContactForm() {
         errors={state.errors}
       />
       <textarea
-        className="bg-white rounded-xl p-2 md:w-full md:h-48 block mb-2"
+        className="bg-white rounded-xl p-2 w-full h-32 md:h-48 block mb-2"
         placeholder="Send me a message!"
         id="message"
         name="message"
@@ -53,7 +53,7 @@ function ContactForm() {
       </button>
       </form>
       </div>
-      <div className="md:w-1/3 mx-2">
+      <div className="md:w-1/3 my-2 md:mx-2">
           <Image
             src="/headshot.png"
             alt=""

@@ -20,13 +20,13 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <section id="about">
+    <section id="about" className="py-12">
       <div className="pb-12 md:pt-16">
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
           Let Me Tell You About Myself
         </h1>
         <div className="flex flex-col space-y-28">
-        <SlideUp offset="-300px 0px -300px 0px">
+        <SlideUp>
         <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
         <div className=" md:w-1/4">
         <Image
@@ -57,7 +57,7 @@ const AboutSection = () => {
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
           My Skills
           </h1>
-          <SlideUp offset="-300px 0px -300px 0px">
+          <SlideUp>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (

@@ -23,11 +23,11 @@ const HeroSection = () => {
             <span className="font-semibold text-blue-600">
               Software and Full Stack Web Developer{' '}
             </span>
-            at your service. Scroll down to see my skills and works!
+            at your service.
           </p>
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center ">
+      
         <Link
           to="about"
           activeClass="active"
@@ -36,9 +36,11 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <div className="animate-bounce flex flex-col items-center text-center justify-center ">
+          Scroll down to see my skills and works!
+          <HiArrowDown size={35}/>
+          </div>
         </Link>
-      </div>
     </section>
   )
 }

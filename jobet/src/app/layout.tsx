@@ -11,7 +11,7 @@ const muktaMahee = Mukta_Mahee({
 })
 
 export default function RootLayout({
-  children,
+children,
 }: {
   children: React.ReactNode
 }) {
@@ -21,7 +21,6 @@ export default function RootLayout({
       <body className={muktaMahee.className}>
         <ThemeProvider enableSystem={true} attribute="class">
           <Head/>
-          <Navbar />
           {children}
           <Footer />
         </ThemeProvider>
