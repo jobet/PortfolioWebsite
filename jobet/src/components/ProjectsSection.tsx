@@ -21,7 +21,7 @@ const projects = [
     link: "",
   },
   {
-    name: "Counterfeit Over-The-Counter Medicine Detector",
+    name: "MeDetect",
     description:
       "A web application that allows users to detect medicine authenticity through object detection.",
     image: "/familyphotos.png",
@@ -36,13 +36,11 @@ const ProjectsSection = () => {
       <h1 className="my-5 text-left font-bold font-serif text-4xl">
         Projects I Worked On
       </h1>
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col justify-center z-10 md:flex-row">
         {projects.map((project, idx) => {
           return (
-            <div key={idx}>
+            <div className="md:w-1/3 md:px-1 pb-3">
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
@@ -51,11 +49,9 @@ const ProjectsSection = () => {
                         height={400}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
-                    </Link>
-                  </div>
-                  <div className="mt-4 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4">
+                      </Link>
+                      <h1 className="text-3xl font-bold mb-2">{project.name}</h1>
+                    <p className="text-l leading-7 mb-2 ">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
@@ -72,10 +68,8 @@ const ProjectsSection = () => {
                         />
                       </Link>
                     </div>
-                  </div>
-                </div>
               </SlideUp>
-            </div>
+              </div>
           )
         })}
         
