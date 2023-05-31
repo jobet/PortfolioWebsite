@@ -60,9 +60,11 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
+                  <div key={idx}>
                   <span className="bg-blue-600 text-white px-4 py-2 mr-2 mt-2 rounded-full font-semibold">
                     {item.icon} {item.skill}
                   </span>
+                  </div>
                 )
               })}
             </div>

@@ -39,7 +39,7 @@ const ProjectsSection = () => {
       <div className="flex flex-col justify-center z-10 md:flex-row">
         {projects.map((project, idx) => {
           return (
-            <div className="md:w-1/3 md:px-1 pb-3">
+            <div key={idx} className="md:w-1/3 md:px-1 pb-3">
               <SlideUp offset="-300px 0px -300px 0px">
                     <Link href={project.link}>
                       <Image
