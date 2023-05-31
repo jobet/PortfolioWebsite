@@ -48,7 +48,7 @@ const AboutSection = () => {
             <p>
               I am adept in various programming languages like Python, C#, C++, HTML, CSS, JavaScript, as well as modern web frameworks like React and Next. 
               Outside of web development, I enjoy playing video games, reading manga, watching videos and learning new things. 
-              It&apos;s a pleasure to connect - check out some of my work and projects!
+              It&apos;s a pleasure to connect - check out some of my projects I worked on during my time at college!
             </p>
             </div>
           </div>
@@ -57,6 +57,7 @@ const AboutSection = () => {
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
           My Skills
           </h1>
+          <SlideUp offset="-300px 0px -300px 0px">
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
@@ -66,6 +67,7 @@ const AboutSection = () => {
                 )
               })}
             </div>
+            </SlideUp>
       </div>
     </section>
   )

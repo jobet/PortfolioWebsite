@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         backgroundColor: '#fafced',
+        formColor: '#fafced',
       },
       fontFamily: {
         sans: 'Mukta Mahee, sans-serif',

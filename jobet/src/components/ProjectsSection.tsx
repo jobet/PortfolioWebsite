@@ -47,11 +47,11 @@ const ProjectsSection = () => {
                         alt=""
                         width={800}
                         height={400}
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className="rounded-xl hover:opacity-70"
                       />
                       </Link>
                       <h1 className="text-3xl font-bold mb-2">{project.name}</h1>
-                    <p className="text-l leading-7 mb-2 ">
+                    <p className="text-xl leading-7 mb-2 ">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
