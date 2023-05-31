@@ -12,7 +12,7 @@ function ContactForm() {
       <h1 className="my-2 text-left font-bold font-serif text-4xl">
         Get In Touch
       </h1>
-      <p className="text-3xl text-center">Thanks for the message! <br />I'll get back to you!</p>
+      <p className="text-3xl text-center">Thanks for the message! <br />I&apos;ll get back to you!</p>
       </section>
       );
   }
