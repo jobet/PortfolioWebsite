@@ -39,7 +39,7 @@ const Overview = () => {
             <p>
              In my specializations, It is focused to enhance and nurture my <span className="text-orange-600">hard
              skills</span>. In Web Development, I have focused to take CSS, React, and Node.
-             These are modern frameworks that are mostly used in today's web development.
+             These are modern frameworks that are mostly used in today&apos;s web development.
              For User Exeperience, It talks about User Experience in detail and the rules
              one must abide to make the experience enjoyable and seamless. It also talks
              about the importance of accessibility. Finally, Cloud Computing helps in introducing
