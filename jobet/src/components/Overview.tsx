@@ -7,7 +7,7 @@ const Overview = () => {
     <section id="practicum" className="py-12">
       <div className="pb-12 md:pt-24 animate-fadeIn animation-delay-2">
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
-          My Practicum Journey: An Overview
+          An Overview Of My Practicum
         </h1>
         <div className="flex flex-col space-y-28">
         <div className="flex flex-col justify-center items-center animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
@@ -33,14 +33,14 @@ const Overview = () => {
              Management can help improve and enhance my <span className="text-orange-600">soft skills</span>. 
              These are vital in the workplace since it requires you to think creatively and critically.
              It also equips you to collaborate with your co-workers, handle projects,
-             and the ettiquettes within the workplace.
+             and the etiquettes within the workplace.
              </p>
             <br/>
             <p>
-             In my specializations, It is focused to enhance and nurture my <span className="text-orange-600">hard
+             In my specializations, it is focused to enhance and nurture my <span className="text-orange-600">hard
              skills</span>. In Web Development, I have focused to take CSS, React, and Node.
              These are modern frameworks that are mostly used in today&apos;s web development.
-             For User Exeperience, It talks about User Experience in detail and the rules
+             For User Experience, It talks about User Experience in detail and the rules
              one must abide to make the experience enjoyable and seamless. It also talks
              about the importance of accessibility. Finally, Cloud Computing helps in introducing
              Cloud services to deploy web applications, set up storage solutions and automate
