@@ -10,11 +10,11 @@ const HeroSection = () => {
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src="/headshot.png"
+            src="/profile_small.png"
             alt=""
-            width={325}
-            height={325}
-            className="rounded-full shadow-2xl"
+            width={300}
+            height={400}
+            className=""
           />
         </div>
         <div className="md:mt-2 md:w-3/5">

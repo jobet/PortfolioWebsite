@@ -1,8 +1,6 @@
 "use client"
 import './globals.css'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import Head from './head'
 import { ThemeProvider } from "next-themes"
 import { Mukta_Mahee } from 'next/font/google'
 const muktaMahee = Mukta_Mahee({ 
@@ -20,7 +18,6 @@ children,
       <head />
       <body className={muktaMahee.className}>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Head/>
           {children}
           <Footer />
         </ThemeProvider>

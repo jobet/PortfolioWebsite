@@ -28,9 +28,9 @@ const AboutSection = () => {
         <div className="flex flex-col space-y-28">
         <SlideUp>
         <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-        <div className=" md:w-1/4">
+        <div className="md:w-1/4 md:py-24 px-12 md:px-0">
         <Image
-              src="/hero-image.png"
+              src="/programming.svg"
               alt=""
               width={325}
               height={325}

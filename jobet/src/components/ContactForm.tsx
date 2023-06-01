@@ -27,7 +27,7 @@ function ContactForm() {
       <form onSubmit={handleSubmit}>
       <input
         className="bg-white rounded-xl p-2 w-full block mb-2"
-        placeholder="youremail@website.com"
+        placeholder="example@website.com"
         id="email"
         type="email" 
         name="email"
@@ -53,9 +53,9 @@ function ContactForm() {
       </button>
       </form>
       </div>
-      <div className="md:w-1/3 my-2 md:mx-2">
+      <div className="md:w-1/3 my-2 md:mx-2 px-24 md:pl-8 md:pr-0">
           <Image
-            src="/headshot.png"
+            src="/contactme.svg"
             alt=""
             width={300}
             height={300}

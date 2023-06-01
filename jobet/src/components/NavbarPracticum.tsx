@@ -15,10 +15,6 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "practicum",
   },
   {
-    label: "Overview",
-    page: "overview",
-  },
-  {
     label: "Output",
     page: "output",
   },
@@ -35,13 +31,13 @@ const NAV_ITEMS: Array<NavItem> = [
 export default function NavbarPracticum() {
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 md:bg-transparent bg-backgroundColor">
+    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50  animate-fadeIn animation-delay-2 md:bg-transparent bg-backgroundColor">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
               <div className="container flex items-center space-x-2 cursor-pointer">
-                <img src="\logo.svg" width="30"></img>
+                <img src="\logoo.svg" width="30"></img>
                 <h2 className="text-2xl font-serif font-bold">Jose Alberto Aguirre</h2>
               </div>
             </a>
