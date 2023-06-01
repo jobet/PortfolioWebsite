@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
+import Image from "next/image"
 import { Link } from 'react-scroll/modules'
 import { MdMenu } from "react-icons/md";
 
@@ -37,7 +38,10 @@ export default function NavbarPracticum() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
               <div className="container flex items-center space-x-2 cursor-pointer">
-                <img src="\logoo.svg" width="30"></img>
+              <Image src="\logoo.svg"
+                width={30}
+                height={30}
+                alt="J"/>
                 <h2 className="text-2xl font-serif font-bold">Jose Alberto Aguirre</h2>
               </div>
             </a>
