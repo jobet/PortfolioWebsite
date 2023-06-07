@@ -4,6 +4,7 @@ import Synthesis from "@/components/Synthesis"
 import Documents from "@/components/Documents"
 import NavbarPracticum from '@/components/NavbarPracticum'
 import HeadPracticum from '../headpracticum'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Output />
       <Synthesis />
       <Documents />
+      <Analytics />
     </main>
     </>
   )

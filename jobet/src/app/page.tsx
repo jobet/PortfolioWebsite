@@ -4,6 +4,7 @@ import ProjectsSection from "@/components/ProjectsSection"
 import ContactForm from "@/components/ContactForm"
 import Navbar from '@/components/Navbar'
 import Head from './head'
+import { Analytics } from '@vercel/analytics/react'
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <ContactForm />
+      <Analytics />
     </main>
     </>
   )
