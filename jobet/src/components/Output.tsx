@@ -1,6 +1,44 @@
+'use client'
 import React from "react"
-import Image from "next/image"
 import SlideUp from "./SlideUp"
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/css/image-gallery.css'
+
+const images = [
+  {
+    original: 'cert1.png',
+  }, {
+    original: 'cert2.png',
+  },  {
+    original: 'cert3.png',
+  },  {
+    original: 'cert4.png',
+  },  {
+    original: 'cert5.png',
+  },  {
+    original: 'cert6.png',
+  },  {
+    original: 'cert7.png',
+  },  {
+    original: 'cert8.png',
+  },  {
+    original: 'cert9.png',
+  },  {
+    original: 'cert10.png',
+  },  {
+    original: 'cert11.png',
+  },  {
+    original: 'cert12.png',
+  },  {
+    original: 'cert13.png',
+  },  {
+    original: 'cert14.png',
+  },  {
+    original: 'cert15.png',
+  },  {
+    original: 'cert16.png',
+  },
+];
 
 const Output = () => {
   return (
@@ -11,6 +49,10 @@ const Output = () => {
         </h1>
         <div className="flex flex-col space-y-28">
         <SlideUp>
+        <div className="flex flex-col justify-center items-center md:flex-col md:space-x-12">
+        <div className="text-center pb-8 md:w-1/2">
+        <ImageGallery items={images} showThumbnails={false} />
+        </div>
         <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
         <div className="md:w-full md:text-left text-xl">
             <p>
@@ -46,6 +88,7 @@ const Output = () => {
             from Vercel.
             </p>
             </div>
+          </div>
           </div>
           </SlideUp>
         </div>
