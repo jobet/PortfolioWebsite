@@ -12,12 +12,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: '#fafced',
-        formColor: '#fafced',
+        backgroundColor: '#ecf1f7',
+        formColor: '#ecf1f7',
       },
       fontFamily: {
         sans: 'Mukta Mahee, sans-serif',
-        serif: 'DM Serif Display, serif',
+        serif: 'Unbounded Sans, sans-serif',
       },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {

@@ -7,14 +7,13 @@ import { HiArrowDown } from "react-icons/hi"
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-2 lg:my-10 py-12 md:py-12 lg:py-24 xl:py-36 2xl:py-48 md:flex-row md:space-x-2 md:text-left">
-        <div className="md:mt-2 md:w-1/3">
+      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-2 lg:my-10 py-20 md:py-12 lg:py-24 xl:py-36 2xl:py-48 md:flex-row md:space-x-2 md:text-left">
+        <div className="md:mt-2 md:w-2/5">
           <Image
             src="/profile_small.png"
             alt=""
-            width={250}
-            height={300}
-            className=""
+            width={1000}
+            height={1000}
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
@@ -27,20 +26,6 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-      
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <div className="animate-bounce flex flex-col items-center text-center justify-center ">
-          Scroll down to see my skills and works!
-          <HiArrowDown size={35}/>
-          </div>
-        </Link>
     </section>
   )
 }

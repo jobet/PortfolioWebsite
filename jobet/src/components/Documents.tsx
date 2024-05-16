@@ -8,36 +8,8 @@ const pdfFiles = [
     name: "Competency-Based Curriculum Vitae",
     description:
       "My CV which provides my contact details, education, skills, and projects.",
-    size: "5.96 MB",
+    size: "330 KB",
     link: "/CV_Aguirre.pdf",
-  },
-  {
-    name: "Practicum Confirmation and Acceptance Form",
-    description:
-      "A form where it provides my acceptance and confirmation in my chosen learning path.",
-      size: "3.62 MB",
-      link: "/PC_Aguirre.pdf",
-  },
-  {
-    name: "Student Training Agreement and Liability Waiver",
-    description:
-      "A form where it provides the agreement and liability waiver about myself, my practicum adviser, and host company representative.",
-    size: "5.37 MB",
-    link: "/LW_Aguirre.pdf",
-  },
-  {
-    name: "CS Practicum X Learning Path Proposal",
-    description:
-      "My learning path proposal which is signed and approved by the Dean.",
-    size: "485 KB",
-    link: "/LP_Aguirre.pdf",
-  },
-  {
-    name: "Compiled Daily Journal",
-    description:
-      "A compilation of my daily journals during my practicum engangement.",
-    size: "3.14 MB",
-    link: "/DJ_Aguirre.pdf",
   },
   {
     name: "Final Report",

@@ -42,7 +42,7 @@ export default function NavbarPracticum() {
                 width={30}
                 height={30}
                 alt="J"/>
-                <h2 className="text-2xl font-serif font-bold">Jose Alberto Aguirre</h2>
+                <h2 className="text-2xl font-serif font-bold">Jobet</h2>
               </div>
             </a>
             <div className="md:hidden">

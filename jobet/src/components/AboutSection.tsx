@@ -3,19 +3,22 @@ import Image from "next/image"
 import SlideUp from "./SlideUp"
 import { SiNextdotjs, SiCsharp, SiHtml5, SiCss3
  , SiJavascript, SiPython, SiDotnet, SiReact, SiNodedotjs
-, SiGithub, SiJupyter } from 'react-icons/si'
+, SiGithub, SiJupyter, SiSupabase, SiMysql, SiMicrosoftsqlserver } from 'react-icons/si'
 const skills = [
-  { icon: <SiCsharp  className="inline"/>, skill: "C#" },
-  { icon: <SiHtml5  className="inline"/>, skill: "HTML" },
-  { icon: <SiCss3  className="inline"/>, skill: "CSS" },
-  { icon: <SiJavascript  className="inline"/>, skill: "JavaScript" },
-  { icon: <SiPython  className="inline"/>, skill: "Python" },
-  { icon: <SiDotnet  className="inline"/>, skill: "ASP.NET" },
   { icon: <SiReact  className="inline"/>, skill: "React" },
   { icon: <SiNextdotjs className="inline"/>, skill: "Next.js" },
   { icon: <SiNodedotjs  className="inline"/>, skill: "Node.js" },
-  { icon: <SiGithub  className="inline"/>, skill: "GitHub" },
+  { icon: <SiHtml5  className="inline"/>, skill: "HTML" },
+  { icon: <SiCss3  className="inline"/>, skill: "CSS" },
+  { icon: <SiJavascript  className="inline"/>, skill: "JavaScript" },
+  { icon: <SiSupabase  className="inline"/>, skill: "Supabase" },
+  { icon: <SiMysql  className="inline"/>, skill: "MySQL" },
+  { icon: <SiMicrosoftsqlserver  className="inline"/>, skill: "Microsoft SQL" },
+  { icon: <SiCsharp  className="inline"/>, skill: "C#" },
+  { icon: <SiPython  className="inline"/>, skill: "Python" },
   { icon: <SiJupyter  className="inline"/>, skill: "Jupyter" },
+  { icon: <SiDotnet  className="inline"/>, skill: "ASP.NET" },
+  { icon: <SiGithub  className="inline"/>, skill: "GitHub" },
 ]
 
 const AboutSection = () => {
@@ -23,20 +26,20 @@ const AboutSection = () => {
     <section id="about" className="py-12">
       <div className="pb-12 md:pt-16">
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
-          Let Me Tell You About Myself
+          About
         </h1>
         <div className="flex flex-col space-y-28">
         <SlideUp>
         <div className="flex flex-col justify-center items-center animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-        <div className="md:w-1/4 px-12 md:px-0">
+        <div className="md:w-2/5 px-12 md:px-0">
         <Image
               src="/programming.svg"
               alt=""
-              width={325}
-              height={325}
+              width={600}
+              height={600}
             />
         </div>
-        <div className="md:w-3/4 md:text-left text-xl">
+        <div className="md:w-3/5 md:text-left text-xl">
             <p>
               Hello and welcome to my portfolio! My name is Jose Albero Aguirre, but you can call me Jobet. I am a Software and Full Stack Developer.
             </p><br/>  
@@ -55,7 +58,7 @@ const AboutSection = () => {
           </SlideUp>
         </div>
         <h1 className="my-5 text-left font-bold font-serif text-4xl">
-          My Skills
+          Skill-Stack
           </h1>
           <SlideUp>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
