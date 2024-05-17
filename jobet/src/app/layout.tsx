@@ -19,7 +19,6 @@ children,
       <body className={muktaMahee.className}>
         <ThemeProvider enableSystem={true} attribute="class">
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

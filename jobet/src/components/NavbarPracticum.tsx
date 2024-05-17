@@ -63,7 +63,7 @@ export default function NavbarPracticum() {
             }`}
           >
             <div className="text-white font-semibold rounded-xl md:rounded-full items-center justify-center space-y-8 md:flex md:space-x-2 md:space-y-0">
-                  <a href="/" className="bg-blue-600 block lg:inline-block cursor-pointer rounded-xl md:rounded-full hover:bg-blue-700 px-5 py-2 ">
+                  <a href="/" className="bg-formColor block lg:inline-block cursor-pointer rounded-xl md:rounded-full hover:bg-formColorLighter transition-all px-5 py-2 ">
                     Portfolio
                   </a>
               <div className="bg-orange-600 md:rounded-full rounded-xl">

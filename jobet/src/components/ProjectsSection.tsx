@@ -54,13 +54,13 @@ const ProjectsSection = () => {
                         alt=""
                         width={800}
                         height={800}
-                        className="rounded-xl"
+                        className="rounded-xl outline outline-formColor outline-8 outline-offset-[-4px]"
                       />
-                      <h1 className="text-3xl font-bold">{project.name}</h1>
+                      <h1 className="text-3xl font-bold pt-4">{project.name}</h1>
                     <p className="text-lg leading-7 mb-2">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex flex-row align-bottom space-x-4 pb-4">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}

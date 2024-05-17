@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: '#ecf1f7',
-        formColor: '#ecf1f7',
+        backgroundColor: '#ffffff00',
+        formColor: '#4d5b8a',
+        formColorLighter: '#7381a6',
       },
       fontFamily: {
         sans: 'Mukta Mahee, sans-serif',

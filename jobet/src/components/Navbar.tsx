@@ -28,28 +28,6 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "contact",
   },
 ]
-const NAV_ITEMS_PRACTICUM: Array<NavItem> = [
-  {
-    label: "Practicum",
-    page: "practicum",
-  },
-  {
-    label: "Overview",
-    page: "overview",
-  },
-  {
-    label: "Output",
-    page: "output",
-  },
-  {
-    label: "Synthesis",
-    page: "synthesis",
-  },
-  {
-    label: "Documents",
-    page: "documents",
-  },
-]
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
@@ -69,7 +47,8 @@ export default function Navbar() {
                 <Image src="\logo.svg"
                 width={30}
                 height={30}
-                alt="J"/>
+                alt="J"
+                />
                 <h2 className="text-2xl font-serif font-bold">Jobet</h2>
               </div>
             </Link>
@@ -91,14 +70,14 @@ export default function Navbar() {
             }`}
           >
             <div className="text-white font-semibold rounded-xl md:rounded-full items-center justify-center space-y-8 md:flex md:space-x-2 md:space-y-0">
-              <div className="bg-blue-600 md:rounded-full rounded-xl">
+              <div className="bg-formColor md:rounded-full rounded-xl flex">
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
                     to={item.page}
                     className={
-                      "bg-blue-600 block lg:inline-block cursor-pointer rounded-xl md:rounded-full hover:bg-blue-700 px-5 py-2 "
+                      "bg-formColor block lg:inline-block cursor-pointer rounded-xl md:rounded-full hover:bg-formColorLighter transition-all px-5 py-2 "
                     }
                     activeClass="active"
                     spy={true}
@@ -112,11 +91,12 @@ export default function Navbar() {
                 )
               })}
               </div>
-              <div className="bg-orange-600 md:rounded-full rounded-full">
+              {/**<div className="bg-orange-600 md:rounded-full rounded-full">
                   <a href="/practicum" className="bg-red block lg:inline-block cursor-pointer rounded-full hover:bg-orange-700 px-5 py-2 ">
                     Practicum
                   </a>
               </div>
+            )**/}
             </div>
           </div>
         </div>
