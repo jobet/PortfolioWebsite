@@ -10,7 +10,7 @@ const Synthesis = () => {
           What I Learned
         </h1>
         <div className="flex flex-col space-y-28">
-        <SlideUp>
+        
         <div className="flex flex-col justify-center items-center animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-12">
         <div className="text-center md:w-1/2 px-12 md:px-0">
         <Image
@@ -58,7 +58,7 @@ const Synthesis = () => {
             </p>
           </div>
           </div>
-          </SlideUp>
+          
         </div>
       </div>
     </section>

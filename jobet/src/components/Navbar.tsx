@@ -69,15 +69,15 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="text-white font-semibold rounded-xl md:rounded-full items-center justify-center space-y-8 md:flex md:space-x-2 md:space-y-0">
-              <div className="bg-formColor md:rounded-full rounded-xl flex">
+            <div className="text-white font-semibold rounded-full items-center justify-center space-y-8 md:flex md:space-x-2 md:space-y-0">
+              <div className="bg-formColor rounded-3xl md:flex">
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
                     to={item.page}
                     className={
-                      "bg-formColor block lg:inline-block cursor-pointer rounded-xl md:rounded-full hover:bg-formColorLighter transition-all px-5 py-2 "
+                      "bg-formColor block lg:inline-block cursor-pointer rounded-full hover:bg-formColorLighter transition-all px-5 py-2 "
                     }
                     activeClass="active"
                     spy={true}

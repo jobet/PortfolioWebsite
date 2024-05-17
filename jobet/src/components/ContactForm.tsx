@@ -18,10 +18,12 @@ function ContactForm() {
   }
   return (
     <section id="contact" className="py-12">
-    <h1 className="my-2 text-left font-bold font-serif text-4xl">
-      Contact
-    </h1>
-      <SlideUp>
+      
+        <h1 className="my-2 text-left font-bold font-serif text-4xl">
+          Contact
+        </h1>
+      
+      
       <div className="flex flex-col z-10 md:flex-row">
       <div className="md:w-2/3 md:mx-2">
       <div className="flex flex-wrap flex-row items-center space-x-2 mb-1 pt-2 text-black">
@@ -105,7 +107,7 @@ function ContactForm() {
           />
       </div>
       </div>
-    </SlideUp>
+    
     </section>
   );
 }

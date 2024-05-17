@@ -25,7 +25,7 @@ const Documents = () => {
     <h1 className="my-2 text-left font-bold font-serif text-4xl">
       Related Forms and Documents
     </h1>
-      <SlideUp>
+      
       <div className="flex flex-col justify-center items-center z-10 md:flex-row">
       <div className="md:w-2/3 md:mx-2">
       <div className="md:w-full md:text-left text-xl">
@@ -33,7 +33,7 @@ const Documents = () => {
       {pdfFiles.map((pdf, idx) => {
           return (
             <div key={idx} className="md:px-2 md:w-full md:px-1 pb-3">
-              <SlideUp>
+              
                     <h1 className="text-2xl font-bold">{pdf.name}</h1>
                     <p className="text-lg leading-7 mb-0 ">
                       {pdf.description}
@@ -46,7 +46,7 @@ const Documents = () => {
                       Download
                       </Link>
                     </div>
-              </SlideUp>
+              
               </div>
           )
         })}
@@ -62,7 +62,7 @@ const Documents = () => {
           />
       </div>
       </div>
-    </SlideUp>
+    
     </section>
   )
 }

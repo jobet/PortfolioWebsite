@@ -48,7 +48,7 @@ const Output = () => {
           My Output
         </h1>
         <div className="flex flex-col space-y-28">
-        <SlideUp>
+        
         <div className="flex flex-col justify-center items-center md:flex-col md:space-x-12">
         <div className="text-center pb-8 md:w-1/2">
         <ImageGallery items={images} showThumbnails={false} />
@@ -90,7 +90,7 @@ const Output = () => {
             </div>
           </div>
           </div>
-          </SlideUp>
+          
         </div>
       </div>
     </section>
