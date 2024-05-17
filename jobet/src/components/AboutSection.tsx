@@ -32,7 +32,7 @@ const AboutSection = () => {
         </h1>
       
         <div className="flex flex-col space-y-28">
-        <div className="flex flex-col justify-center items-center animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+        <div className="flex flex-col justify-center items-center md:flex-row md:space-x-12">
           <div className="indent-6 md:w-1/2 text-xl text-justify">
             
               <p>
