@@ -45,7 +45,7 @@ const AboutSection = () => {
                 Hello and welcome to my portfolio! My name is Jose Albero Aguirre, but you can call me Jobet. I am a Software and Full Stack Developer.
               </p><br/>  
               <p>
-                I recently graduated with a Bachelor'&apos;'s Degree in Computer Science from Mapúa Malayan Colleges in Laguna, Philippines. 
+                I recently graduated with a Bachelor&apos;s Degree in Computer Science from Mapúa Malayan Colleges in Laguna, Philippines. 
                 With over 4 years of experience in developing software and specifically web applications, I have a passion for building innovative solutions
                 and products that provide value to users. 
               </p><br/>
