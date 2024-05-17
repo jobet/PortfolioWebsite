@@ -1,6 +1,8 @@
+"use client" // this is a client component
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
   return (

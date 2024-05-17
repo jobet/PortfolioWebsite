@@ -1,4 +1,6 @@
+"use client"
 import './globals.css'
+import Footer from '@/components/Footer'
 import { ThemeProvider } from "next-themes"
 import { Mukta_Mahee } from 'next/font/google'
 const muktaMahee = Mukta_Mahee({ 

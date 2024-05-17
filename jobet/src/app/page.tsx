@@ -2,7 +2,6 @@ import AboutSection from "@/components/AboutSection"
 import HeroSection from "@/components/HeroSection"
 import ProjectsSection from "@/components/ProjectsSection"
 import ContactForm from "@/components/ContactForm"
-import ContactPage from "@/components/ContactPage"
 import Resume from "@/components/Resume"
 import Navbar from '@/components/Navbar'
 import Head from './head'
@@ -16,7 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
-      <ContactPage />
+      <ContactForm />
     </div>
     <Analytics />
     </>
