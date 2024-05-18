@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "./SlideUp"
 import { BsGithub, BsGlobe } from "react-icons/bs"
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const projects = [
   {
@@ -42,7 +43,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="my-12">
       
-        <h1 className="my-5 text-left font-bold font-serif text-4xl">
+        <h1 className="mb-3 text-left font-bold font-serif text-4xl">
           Projects
         </h1>
       
@@ -54,27 +55,24 @@ const ProjectsSection = () => {
                       <Image
                         src={project.image}
                         alt=""
-                        width={800}
-                        height={800}
-                        className="rounded-xl outline outline-formColor outline-8 outline-offset-[-4px]"
+                        width={1200}
+                        height={600}
+                        className="mb-2 rounded-xl outline outline-formColor outline-2 outline-offset-[-2px]"
                       />
-                      <h1 className="text-3xl font-bold pt-4">{project.name}</h1>
-                    <p className="text-lg leading-7 mb-2 indent-6">
-                      {project.description}
-                    </p>
+                        <div className="flex flex-row items-center text-2xl font-bold">
+                          <Link href={project.website} target="_blank">
+                            <h1 className="flex font-serif hover:-translate-y-[2px] transition-transform cursor-pointer">
+                              {project.name} <RiArrowRightUpLine className="ml-1 text-3xl"/>
+                            </h1>
+                          </Link>
+                          <Link href={project.github} target="_blank">
+                            <BsGithub size={30} className="hover:-translate-y-[2px] transition-transform cursor-pointer ml-1" />
+                          </Link>
+                        </div>
+                      <p className="text-lg leading-7 mb-2 indent-6">
+                        {project.description}
+                      </p>
                     <div className="flex flex-row align-bottom space-x-4 pb-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                      <Link href={project.website} target="_blank">
-                        <BsGlobe
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
                     </div>
               
               </div>

@@ -27,13 +27,13 @@ const AboutSection = () => {
     <section id="about" className="py-12">
       <div className="pb-12 md:pt-16">
       
-        <h1 className="my-5 text-left font-bold font-serif text-4xl">
+        <h1 className="mb-2 text-left font-bold font-serif text-4xl">
           About
         </h1>
       
         <div className="flex flex-col space-y-28">
         <div className="flex flex-col justify-center items-center md:flex-row md:space-x-12">
-          <div className="indent-6 md:w-1/2 text-xl text-justify">
+          <div className="indent-6 md:w-1/2 text-lg text-justify">
             
               <p>
                 Hello and welcome to my portfolio! My name is Jose Albero Aguirre, but you can call me Jobet. I am a Software and Full Stack Developer.
@@ -68,7 +68,7 @@ const AboutSection = () => {
           </div>
         </div>
         
-          <h1 className="my-5 text-left font-bold font-serif text-4xl">
+          <h1 className="mt-5 mb-2 text-left font-bold font-serif text-4xl">
             Skills
           </h1>
         
@@ -76,7 +76,7 @@ const AboutSection = () => {
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
-                  <span key={idx} className="bg-formColor text-white px-4 py-2 mr-2 mt-2 rounded-full font-semibold">
+                  <span key={idx} className="bg-formColor text-white px-5 py-3 mr-2 mb-2 rounded-full font-semibold">
                     {item.icon} {item.skill}
                   </span>
                 )

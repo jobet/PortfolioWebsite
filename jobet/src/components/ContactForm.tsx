@@ -18,20 +18,17 @@ function ContactForm() {
   }
   return (
     <section id="contact" className="py-12">
-      
-        <h1 className="my-2 text-left font-bold font-serif text-4xl">
+        <h1 className="mb-2 text-left font-bold font-serif text-4xl">
           Contact
         </h1>
-      
-      
       <div className="flex flex-col z-10 md:flex-row">
       <div className="md:w-2/3 md:mx-2">
-      <div className="flex flex-wrap flex-row items-center space-x-2 mb-1 pt-2 text-black">
+      <div className="flex flex-wrap flex-row items-center space-x-2 mb-1 text-black">
           <a 
             href="https://github.com/jobet/" 
             rel="noreferrer"
             target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 py-2 text-black text-l mr-2"
+            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 text-black text-l mr-2"
           >
             <FaGithub
               className="text-formColor mr-2"
@@ -40,22 +37,10 @@ function ContactForm() {
             jobet
           </a>
           <a
-            href="https://www.facebook.com/jobetaguirre/"
-            rel="noreferrer"
-            target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 py-2 text-black text-l mr-2"
-          >
-            <FaFacebook
-              size={25}
-              className="text-formColor mr-2"
-            />
-            Jose Alberto Aguirre
-          </a>
-          <a
             href="https://www.linkedin.com/in/jose-alberto-aguirre"
             rel="noreferrer"
             target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 py-2 text-black text-l mr-2"
+            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 text-black text-l mr-2"
           >
             <FaLinkedin
               className="text-formColor mr-2"
@@ -63,7 +48,7 @@ function ContactForm() {
             />
             jose-alberto-aguirre
           </a>
-          <p className="flex flex-row items-center space-x-2 mb-1 py-2 text-black text-l">
+          <p className="flex flex-row items-center space-x-2 mb-1 text-black text-l">
             <FaPhoneAlt size={20} className="text-formColor"/>
             +63 916 325 3149
           </p>
@@ -92,12 +77,12 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <button className="bg-formColor hover:bg-formColorLighter transition-all transition-all text-white px-4 py-2 mr-2 rounded-full font-semibold" type="submit" disabled={state.submitting}>
+      <button className="bg-formColor hover:bg-formColorLighter transition-all transition-all text-white px-6 py-2 mr-2 rounded-full font-semibold" type="submit" disabled={state.submitting}>
         Submit
       </button>
       </form>
       </div>
-      <div className="md:w-1/3 my-2 md:mx-2 px-24 md:pl-8 md:pr-0">
+      <div className="content-center md:w-1/3 my-2 md:mx-2 px-24 md:pl-8 md:pr-0">
           <Image
             src="/contactme.svg"
             alt=""
@@ -107,7 +92,6 @@ function ContactForm() {
           />
       </div>
       </div>
-    
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const HeroSection = () => {
   return (
@@ -16,15 +17,15 @@ const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mt-6 md:mt-0">Hey, Jobet here!</h1>
-          <p className="text-base sm:text-lg  lg:text-2xl mt-4 mb-4">I&apos;m a
+          <p className="text-lg  lg:text-2xl mt-4 mb-4">I&apos;m a
             <span className="font-semibold text-formColor">
               {' '}Software and Full Stack Web Developer,{' '}
             </span>
             creating innovative apps with clean & user-friendly experiences.
           </p>
           <div className="flex flex-row space-x-2 mb-1 justify-center md:justify-start">
-          <Link href="/CV_Aguirre.pdf" target="_blank" className="text-base md:text-xl bg-formColor hover:bg-formColorLighter transition-all text-white px-8 py-2 rounded-full font-semibold">
-                Download Resume
+          <Link href="/CV_Aguirre.pdf" target="_blank" className="flex items-center text-base md:text-xl bg-formColor hover:bg-formColorLighter transition-all text-white px-8 py-2 rounded-full font-semibold">
+                <MdOutlineFileDownload className="mr-2"/> Download Resume
           </Link>
           </div>
         </div>
