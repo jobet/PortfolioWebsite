@@ -24,7 +24,7 @@ const HeroSection = () => {
             creating innovative apps with clean & user-friendly experiences.
           </p>
           <div className="flex flex-row space-x-2 mb-1 justify-center md:justify-start">
-          <Link href="/CV_Aguirre.pdf" target="_blank" className="flex items-center text-base md:text-xl bg-formColor hover:bg-formColorLighter transition-all text-white px-8 py-2 rounded-full font-semibold">
+          <Link href="/Aguirre_Resume.pdf" target="_blank" className="flex items-center text-base md:text-xl bg-formColor hover:bg-formColorLighter transition-all text-white px-8 py-2 rounded-full font-semibold">
                 <MdOutlineFileDownload className="mr-2"/> Download Resume
           </Link>
           </div>
