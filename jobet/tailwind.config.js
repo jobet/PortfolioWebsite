@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: 'Mukta Mahee, sans-serif',
-        serif: 'Unbounded, sans-serif',
+        serif: 'Dela Gothic One, sans-serif',
       },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
