@@ -18,8 +18,8 @@ const projects = [
     name: "DSA Visualizer",
     description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a back-end webpage for webmasters to manage analytics, comments, and users.",
     image: "/dsavisualizer.png",
-    github: "https://github.com/Staniell/Data-Structures-Visualizer-React",
-    website: "/",
+    github: "https://github.com/jobet/DSA-Client",
+    website: "https://dsavisual.vercel.app/",
   },
   {
     name: "MeDetect",
