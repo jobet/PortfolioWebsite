@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import SlideUp from "./SlideUp"
 import { BsGithub, BsGlobe } from "react-icons/bs"
 import { RiArrowRightUpLine } from "react-icons/ri";
 
@@ -15,19 +14,19 @@ const projects = [
     website: "/",
   },
   {
-    name: "DSA Visualizer",
-    description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a back-end webpage for webmasters to manage analytics, comments, and users.",
-    image: "/dsavisualizer.png",
-    github: "https://github.com/jobet/DSA-Client",
-    website: "https://dsavisual.vercel.app/",
-  },
-  {
     name: "MeDetect",
     description:
       "A web application that allows users to detect medicine authenticity through object detection.",
     image: "/medetect.png",
     github: "https://github.com/Jordiak/CSThesis",
     website: "/",
+  },
+  {
+    name: "DSA Visual",
+    description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a back-end webpage for webmasters to manage analytics, comments, and users.",
+    image: "/dsavisualizer.png",
+    github: "https://github.com/jobet/DSA-Client",
+    website: "https://dsavisual.vercel.app/",
   },
   {
     name: "TaskList",
