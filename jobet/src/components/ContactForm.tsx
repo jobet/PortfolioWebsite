@@ -3,7 +3,6 @@ import React from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import SlideUp from './SlideUp'
 import Image from 'next/image'
-import { FaFacebook, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 function ContactForm() {
   const [state, handleSubmit] = useForm("meqwwyaa");
   if (state.succeeded) {
@@ -23,36 +22,6 @@ function ContactForm() {
         </h1>
       <div className="flex flex-col z-10 md:flex-row">
       <div className="md:w-2/3 md:mx-2">
-      <div className="flex flex-wrap flex-row items-center space-x-2 mb-1 text-black">
-          <a 
-            href="https://github.com/jobet/" 
-            rel="noreferrer"
-            target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 text-black text-l mr-2"
-          >
-            <FaGithub
-              className="text-formColor mr-2"
-              size={25}
-            />
-            jobet
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jose-alberto-aguirre"
-            rel="noreferrer"
-            target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer flex flex-row items-center space-x-2 mb-1 text-black text-l mr-2"
-          >
-            <FaLinkedin
-              className="text-formColor mr-2"
-              size={25}
-            />
-            jose-alberto-aguirre
-          </a>
-          <p className="flex flex-row items-center space-x-2 mb-1 text-black text-l">
-            <FaPhoneAlt size={20} className="text-formColor"/>
-            +63 916 325 3149
-          </p>
-        </div>
       <form onSubmit={handleSubmit}>
       <input
         className="bg-white rounded-3xl py-4 px-6 w-full block mb-2 outline outline-2 outline-formColor"

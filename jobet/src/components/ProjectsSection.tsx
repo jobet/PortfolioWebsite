@@ -6,22 +6,6 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 
 const projects = [
   {
-    name: "FoxTales Bookstore",
-    description:
-      "A web application that has a book selling system, user functionalities, and back-end for webmasters.",
-    image: "/foxtales.png",
-    github: "https://github.com/Staniell/Online-Book-Library-POS-System",
-    website: "/",
-  },
-  {
-    name: "MeDetect",
-    description:
-      "A web application that allows users to detect medicine authenticity through object detection.",
-    image: "/medetect.png",
-    github: "https://github.com/Jordiak/CSThesis",
-    website: "/",
-  },
-  {
     name: "DSA Visual",
     description: "A web application that offers visualizers for Data Structures and Algorithms, featuring a user system, a quiz feature, and a back-end webpage for webmasters to manage analytics, comments, and users.",
     image: "/dsavisualizer.png",
@@ -35,6 +19,22 @@ const projects = [
     image: "/tasklist.png",
     github: "https://github.com/jobet/tasklist",
     website: "https://tasklist-jobet.vercel.app/",
+  },
+  {
+    name: "MeDetect",
+    description:
+      "A web application that allows users to detect medicine authenticity through object detection.",
+    image: "/medetect.png",
+    github: "https://github.com/Jordiak/CSThesis",
+    website: "/",
+  },
+  {
+    name: "FoxTales Bookstore",
+    description:
+      "A web application that has a book selling system, user functionalities, and back-end for webmasters.",
+    image: "/foxtales.png",
+    github: "https://github.com/Staniell/Online-Book-Library-POS-System",
+    website: "/",
   },
 ]
 
