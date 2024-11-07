@@ -36,21 +36,20 @@ export default function Navbar() {
       <div className="justify-center md:items-center md:flex">
         <div>
             <div className="font-semibold rounded-full items-center justify-center space-y-8 md:flex md:space-x-2 md:space-y-0">
-              <div className="bg-white outline outline-1 outline-formColor rounded-3xl flex justify-center items-center">
+              <div className="bg-white outline outline-1 outline-formColor rounded-3xl flex justify-center items-center shadow-lg">
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
                     to={item.page}
                     className={
-                      "flex flex-row bg-transparent text-black block cursor-pointer rounded-full hover:bg-gray-300 transition-all md:px-12 px-8 py-2"
+                      "flex flex-row bg-transparent text-black block cursor-pointer rounded-full hover:bg-gray-300 transition-all px-4 py-2"
                     }
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    onClick={() => setNavbar(!navbar)}
                   > 
                     {item.icon}
                     {item.label}
